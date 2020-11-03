@@ -1,0 +1,19 @@
+@use 'login';
+@use 'loading';
+@use 'message';
+@use 'dashboard';
+@use 'home';
+@use 'books';
+@use 'description';
+@use 'list';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas';
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url(../fonts/Consolas.TTF);
+}

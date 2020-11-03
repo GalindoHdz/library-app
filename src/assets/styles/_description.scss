@@ -1,0 +1,49 @@
+// Letters
+$Regular-font: 'Roboto Regular';
+$Medium-font: 'Roboto Medium';
+$Bold-font: 'Roboto Bold';
+
+// Colors Light
+$First-color: #023145ff;
+$Second-color: #ffffffff;
+$Third-color: #04e07aff;
+
+.description_container {
+    position: absolute;
+    z-index: 10;
+    top: 55px;
+    left: calc(100% / 3 - 40px);
+    width: 50% !important;
+    height: auto;
+    padding: 10px;
+    background-color: $Second-color;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    div {
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    div::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    div::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: $First-color;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px;
+        outline: none;
+    }
+}

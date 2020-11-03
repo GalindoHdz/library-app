@@ -1,0 +1,64 @@
+$First-color: #ffffffff;
+$Success: #04e07aff;
+$Info: #0086d6ff;
+$Warning: #ffbb00ff;
+$Danger: #f9461cff;
+
+.message_container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 380px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    background-color: $First-color;
+    z-index: 10;
+
+    i {
+        width: 10%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: $First-color;
+    }
+
+    p {
+        width: 90%;
+        height: 100%;
+        padding: 0 10px;
+        border-radius: 0px 8px 8px 0px;
+        display: flex;
+        align-items: center;
+        background-color: $First-color;
+    }
+}
+
+.success {
+    i {
+        background-color: $Success;
+    }
+}
+
+.info {
+    i {
+        background-color: $Info;
+    }
+}
+
+.warning {
+    i {
+        background-color: $Warning;
+    }
+}
+
+.danger {
+    i {
+        background-color: $Danger;
+    }
+}

@@ -1,0 +1,41 @@
+// Letters
+$Regular-font: 'Roboto Regular';
+$Medium-font: 'Roboto Medium';
+$Bold-font: 'Roboto Bold';
+
+// Colors Light
+$First-color: #023145ff;
+$Second-color: #ececf2ff;
+$Third-color: #04e07aff;
+
+.list_container {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    overflow-x: auto;
+
+    button {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        font-family: $Medium-font;
+        font-size: 15px;
+        color: white;
+        background-color: $First-color;
+        transition: 500ms;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    button:hover,
+    button:focus {
+        transition: 500ms;
+        background-color: $Third-color;
+    }
+}
